@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VoidCut | Short-Form Video Editing Portfolio</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#09090b',
+              card: '#121215',
+              border: '#27272a',
+              neon: '#a3e635',
+              blue: '#38bdf8',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #09090b;
+      color: #f4f4f5;
+    }
+    .neon-glow {
+      box-shadow: 0 0 25px -5px rgba(163, 230, 53, 0.3);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-brand-neon selection:text-black">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-40 bg-brand-black/80 backdrop-blur-md border-b border-brand-border">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#" class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
+        <span class="w-3 h-3 rounded-full bg-brand-neon inline-block animate-pulse"></span>
+        VoidCut
+      </a>
+      
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+        <a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a>
+        <a href="#services" class="hover:text-white transition-colors">Services</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+      </nav>
+
+      <a href="https://www.instagram.com/voidcut_s/reels/" target="_blank" class="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-black bg-brand-neon rounded-lg hover:bg-lime-300 transition-all shadow-md">
+        Work With Me
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about" class="pt-32 pb-20 px-4 sm:px-6 max-w-6xl mx-auto min-h-[85vh] flex flex-col justify-center">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-border bg-brand-card text-xs font-medium text-brand-neon mb-6">
+        <span>Available for Freelance Projects</span>
+      </div>
+      
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-[1.1] mb-6">
+        Short-Form <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-neon to-brand-blue">Video Editor</span>
+      </h1>
+      
+      <p class="text-lg sm:text-xl text-zinc-400 font-normal leading-relaxed mb-6">
+        I edit talking-head videos into clean, engaging Reels and Shorts with smooth cuts, readable captions, and simple text animations.
+      </p>
+
+      <p class="text-base sm:text-lg text-zinc-400 font-normal leading-relaxed mb-8">
+        Ideal for coaches, educators, podcasters, and professionals who want consistent short-form content. View my editing samples or message me to discuss a project.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4">
+        <a href="#portfolio" class="px-6 py-3.5 rounded-xl font-semibold bg-brand-neon text-black hover:bg-lime-300 transition-all neon-glow flex items-center gap-2">
+          <span>View Sample Edits</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </a>
+        <a href="https://www.instagram.com/voidcut_s/reels/" target="_blank" class="px-6 py-3.5 rounded-xl font-semibold bg-brand-card border border-brand-border text-white hover:border-zinc-500 transition-all">
+          Direct DM
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto border-t border-brand-border">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+      <div>
+        <h2 class="text-3xl font-bold tracking-tight text-white mb-2">Featured Work</h2>
+        <p class="text-zinc-400 text-sm sm:text-base">Click any card to watch the full HD sample edit instantly.</p>
+      </div>
+    </div>
+
+    <!-- Video Cards Grid (4 Videos) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <!-- Video Card 1: UAE Real Estate -->
+      <a href="https://youtube.com/shorts/YGyrEAuMN_Y" target="_blank" class="portfolio-item simple group bg-brand-card rounded-2xl border border-brand-border overflow-hidden flex flex-col transition-all duration-300 hover:border-brand-neon">
+        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+          <img src="https://img.youtube.com/vi/YGyrEAuMN_Y/hqdefault.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="UAE Real Estate">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all">
+            <div class="w-12 h-12 rounded-full bg-brand-neon text-black flex items-center justify-center shadow-lg font-bold">
+              ▶
+            </div>
+          </div>
+          <div class="absolute top-3 left-3">
+            <span class="px-2.5 py-1 rounded-md bg-black/70 backdrop-blur-md text-[10px] font-semibold text-brand-neon border border-brand-neon/30">Simple Storytelling</span>
+          </div>
+        </div>
+        <div class="p-4 flex flex-col flex-grow justify-between">
+          <h4 class="font-bold text-white text-base mb-1">UAE Real Estate Market Breakdown</h4>
+          <p class="text-xs text-zinc-400 mb-3 line-clamp-2">Structured financial and market advisory breakdown with clean captions.</p>
+        </div>
+      </a>
+
+      <!-- Video Card 2: Suburban Tour -->
+      <a href="https://youtube.com/shorts/qrNKSwMD33E" target="_blank" class="portfolio-item simple group bg-brand-card rounded-2xl border border-brand-border overflow-hidden flex flex-col transition-all duration-300 hover:border-brand-neon">
+        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+          <img src="https://img.youtube.com/vi/qrNKSwMD33E/hqdefault.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Suburban Residence Tour">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all">
+            <div class="w-12 h-12 rounded-full bg-brand-neon text-black flex items-center justify-center shadow-lg font-bold">
+              ▶
+            </div>
+          </div>
+          <div class="absolute top-3 left-3">
+            <span class="px-2.5 py-1 rounded-md bg-black/70 backdrop-blur-md text-[10px] font-semibold text-brand-neon border border-brand-neon/30">Simple Storytelling</span>
+          </div>
+        </div>
+        <div class="p-4 flex flex-col flex-grow justify-between">
+          <h4 class="font-bold text-white text-base mb-1">Suburban Residence Tour & Walkthrough</h4>
+          <p class="text-xs text-zinc-400 mb-3 line-clamp-2">Aesthetic property feature tracking and smooth visual pacing.</p>
+        </div>
+      </a>
+
+      <!-- Video Card 3: Dental -->
+      <a href="https://youtube.com/shorts/IHFN7R42bg8" target="_blank" class="portfolio-item flashy group bg-brand-card rounded-2xl border border-brand-border overflow-hidden flex flex-col transition-all duration-300 hover:border-brand-blue">
+        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+          <img src="https://img.youtube.com/vi/IHFN7R42bg8/hqdefault.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Dental Science">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all">
+            <div class="w-12 h-12 rounded-full bg-brand-blue text-black flex items-center justify-center shadow-lg font-bold">
+              ▶
+            </div>
+          </div>
+          <div class="absolute top-3 left-3">
+            <span class="px-2.5 py-1 rounded-md bg-black/70 backdrop-blur-md text-[10px] font-semibold text-brand-blue border border-brand-blue/30">Flashy & Engaging</span>
+          </div>
+        </div>
+        <div class="p-4 flex flex-col flex-grow justify-between">
+          <h4 class="font-bold text-white text-base mb-1">Dental Science & Health Breakdown</h4>
+          <p class="text-xs text-zinc-400 mb-3 line-clamp-2">Educational health breakdown with dynamic visual pacing and motion effects.</p>
+        </div>
+      </a>
+
+      <!-- Video Card 4: Real Estate Agent Storytelling -->
+      <a href="https://youtube.com/shorts/2TzKCjdicxU" target="_blank" class="portfolio-item simple group bg-brand-card rounded-2xl border border-brand-border overflow-hidden flex flex-col transition-all duration-300 hover:border-brand-neon">
+        <div class="relative aspect-[9/16] bg-zinc-900 overflow-hidden">
+          <img src="https://img.youtube.com/vi/2TzKCjdicxU/hqdefault.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Real Estate Agent">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all">
+            <div class="w-12 h-12 rounded-full bg-brand-neon text-black flex items-center justify-center shadow-lg font-bold">
+              ▶
+            </div>
+          </div>
+          <div class="absolute top-3 left-3">
+            <span class="px-2.5 py-1 rounded-md bg-black/70 backdrop-blur-md text-[10px] font-semibold text-brand-neon border border-brand-neon/30">Simple Storytelling</span>
+          </div>
+        </div>
+        <div class="p-4 flex flex-col flex-grow justify-between">
+          <h4 class="font-bold text-white text-base mb-1">Luxury Property Showcase & Agent Branding</h4>
+          <p class="text-xs text-zinc-400 mb-3 line-clamp-2">Clean property highlights, narrative hooks, and professional agent positioning.</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto border-t border-brand-border">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-3xl font-bold tracking-tight text-white mb-3">Services & Solutions</h2>
+      <p class="text-zinc-400 text-sm sm:text-base">Specialized editing workflows crafted to keep your audience watching to the final call to action.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-8 rounded-2xl bg-brand-card border border-brand-border">
+        <h3 class="text-xl font-bold text-white mb-3">Reels & Shorts Editing</h3>
+        <p class="text-sm text-zinc-400 leading-relaxed">Complete short-form post-production, cutting dead air, and structuring high-retention visual hooks.</p>
+      </div>
+      <div class="p-8 rounded-2xl bg-brand-card border border-brand-neon/50 neon-glow">
+        <h3 class="text-xl font-bold text-white mb-3">Retention Optimization</h3>
+        <p class="text-sm text-zinc-400 leading-relaxed">Advanced editing package featuring custom motion graphics, sound design, and kinetic typography.</p>
+      </div>
+      <div class="p-8 rounded-2xl bg-brand-card border border-brand-border">
+        <h3 class="text-xl font-bold text-white mb-3">Long-to-Short Repurposing</h3>
+        <p class="text-sm text-zinc-400 leading-relaxed">Extracting viral clips from long-form podcasts, webinars, or property tours into high-performing Reels.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto border-t border-brand-border">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white mb-4">Let's Work Together</h2>
+      <p class="text-zinc-400 text-sm sm:text-base leading-relaxed mb-8">
+        Ready to turn your raw videos into high-retention content? Send me a message directly on Instagram to discuss your project!
+      </p>
+
+      <a href="https://www.instagram.com/voidcut_s/reels/" target="_blank" class="inline-flex items-center gap-4 p-6 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-neon transition-all group neon-glow">
+        <div class="w-12 h-12 rounded-xl bg-pink-500/10 text-pink-500 flex items-center justify-center group-hover:scale-110 transition-transform">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </div>
+        <div class="text-left">
+          <div class="text-[10px] uppercase font-bold text-zinc-400">Direct Instagram DM</div>
+          <div class="text-base font-semibold text-white">@voidcut_s</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 px-4 border-t border-brand-border text-center text-xs text-zinc-500">
+    <p>© <span id="year"></span> VoidCut. All rights reserved. Built for high-retention video editing.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
